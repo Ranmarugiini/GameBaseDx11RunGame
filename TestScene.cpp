@@ -5,9 +5,7 @@
 #include"Enemy3.h"
 #include"Enmey2.h"
 #include<cstdlib>
-#include<chrono>
-#include<thread>
-using namespace std;
+
 //コンストラクタ
 TestScene::TestScene(GameObject * parent)
 	: GameObject(parent, "TestScene")
@@ -23,7 +21,7 @@ void TestScene::Initialize()
 
 //更新
 void TestScene::Update()
-{
+{//ランダムに敵出す
 	 int k=rand() % 1000;
 	 if (k == 0)
 	 {
