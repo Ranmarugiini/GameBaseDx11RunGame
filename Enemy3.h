@@ -1,14 +1,14 @@
 #pragma once
 #include"Engine/GameObject.h"
-class bullet:public GameObject
+class Enemy3 :public GameObject
 {
     int hModel_;
 public:
     //コンストラクタ
-    bullet(GameObject* parent);
+    Enemy3(GameObject* parent);
 
     //デストラクタ
-    ~bullet();
+    ~Enemy3();
 
     //初期化
     void Initialize()override;
@@ -22,3 +22,5 @@ public:
     //開放
     void Release()override;
 };
+
+

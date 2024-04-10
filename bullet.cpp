@@ -16,18 +16,8 @@ void bullet::Initialize()
 
 void bullet::Update()
 {
-	int i = 0;
-	while (i >= 100) {
-		transform_.position_.z -= 0.1;
-		if (transform_.position_.z = -1.0f)
-		{
-			break;
-		}
-		else
-		{
-			i++;
-		}
-	}
+
+	
 }
 
 void bullet::Draw()

@@ -97,8 +97,10 @@
       <Filter>01Engine\ResourceManager</Filter>
     </ClCompile>
     <ClCompile Include="glound.cpp" />
-    <ClCompile Include="bullet.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Enmey2.cpp" />
+    <ClCompile Include="Enemy3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\BoxCollider.h">
@@ -172,8 +174,10 @@
       <Filter>01Engine\ResourceManager</Filter>
     </ClInclude>
     <ClInclude Include="glound.h" />
-    <ClInclude Include="bullet.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Enmey2.h" />
+    <ClInclude Include="Enemy3.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Assets\Shader\Simple2D.hlsl">

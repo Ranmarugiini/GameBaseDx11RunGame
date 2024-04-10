@@ -1,7 +1,5 @@
 #pragma once
 #include "Engine/GameObject.h"
-#include"bullet.h"
-#include "Engine/Camera.h"
 
 //テストシーンを管理するクラス
 class TestScene : public GameObject
