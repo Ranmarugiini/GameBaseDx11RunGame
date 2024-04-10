@@ -3,6 +3,8 @@
 class Enemy :public GameObject
 {
     int hModel_;
+private:
+    int hSound;
 public:
     //コンストラクタ
     Enemy(GameObject* parent);

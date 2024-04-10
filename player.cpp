@@ -1,7 +1,7 @@
 #include "player.h"
 #include "Engine/Model.h"
 #include"Engine/Input.h"
-
+#include"Engine/SceneManager.h"
 player::player(GameObject* parent) :GameObject(parent, "player"), hModel_(-1)
 {
 
@@ -52,4 +52,6 @@ void player::Release()
 void player::OnCollision(GameObject* pTarget)
 {
 	KillMe();
+	SceneManager* pSceneManager = (SceneManager*)FindObject("SceneManager");
+	pSceneManager->ChangeScene(SCENE_ID_GAMEOVER);
 }

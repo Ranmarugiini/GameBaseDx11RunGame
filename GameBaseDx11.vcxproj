@@ -151,6 +151,7 @@
     <ClCompile Include="Engine\Texture.cpp" />
     <ClCompile Include="Engine\Transform.cpp" />
     <ClCompile Include="Enmey2.cpp" />
+    <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="glound.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="TestScene.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="Engine\Texture.h" />
     <ClInclude Include="Engine\Transform.h" />
     <ClInclude Include="Enmey2.h" />
+    <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="glound.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="TestScene.h" />
