@@ -24,7 +24,7 @@ void TestScene::Initialize()
 //XV
 void TestScene::Update()
 {
-	 int k=rand() % 350;
+	 int k=rand() % 1000;
 	 if (k == 0)
 	 {
 		 Instantiate<Enemy>(this);
