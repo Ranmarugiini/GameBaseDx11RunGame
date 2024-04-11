@@ -1,10 +1,11 @@
 #include "TestScene.h"
 #include"glound.h"
+#include"gloundL.h"
 #include"player.h"
 #include"Enemy.h"
-#include"Enemy3.h"
-#include"Enmey2.h"
+#include"object1.h"
 #include<cstdlib>
+
 
 //コンストラクタ
 TestScene::TestScene(GameObject * parent)
@@ -17,39 +18,39 @@ void TestScene::Initialize()
 {
 	Instantiate<glound>(this);
 	Instantiate<player>(this);
+	Instantiate<gloundL>(this);
 }
-
 //更新
+
 void TestScene::Update()
 {//ランダムに敵出す
-	 int k=rand() % 1000;
-	 if (k == 0)
-	 {
-		 Instantiate<Enemy>(this);
-	 }
-	 else if (k == 1)
-	 {
-		 Instantiate<Enemy2>(this);
-	 }
-	 else if(k==2)
-	 {
-		 Instantiate<Enemy3>(this);
-	 }
-	 else if (k == 4)
-	 {
-		 Instantiate<Enemy>(this);
-		 Instantiate<Enemy2>(this);
-	 }
-	 else if (k == 5)
-	 {
-		 Instantiate<Enemy>(this);
-		 Instantiate<Enemy3>(this);
-	 }
-	 else if (k == 6)
-	 {
-		 Instantiate<Enemy2>(this);
-		 Instantiate<Enemy3>(this);
-	 }
+	int e = 0;
+	if (e % 60 == 0)
+	{
+		int k = rand() % 750;
+		if (k == 0)
+		{
+			Instantiate<Enemy>(this);
+		}
+		else if (k == 1)
+		{
+			Instantiate<Enemy>(this);
+			Instantiate<Enemy>(this);
+		}
+		e = 0;
+	}
+	else {
+		e++;
+	}
+	int OJ = rand() % 100;
+	if (OJ == 0)
+	{
+		Instantiate<object1>(this);
+	}
+	else if (OJ == 1)
+	{
+		Instantiate<object1>(this);
+	}
 }
 
 //描画

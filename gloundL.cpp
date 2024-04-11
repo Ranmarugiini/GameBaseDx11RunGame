@@ -1,20 +1,20 @@
-#include "glound.h"
+#include "gloundL.h"
 #include"Engine/Model.h"
 
-glound::glound(GameObject*parent) :GameObject(parent, "glound"), hModel_(-1)
+gloundL::gloundL(GameObject* parent) :GameObject(parent, "gloundL"), hModel_(-1)
 {
 
 
 }
-glound::~glound(){}
+gloundL::~gloundL() {}
 
-void glound::Initialize()
+void gloundL::Initialize()
 {//初期リス
-	transform_.position_.x = 2;
+	transform_.position_.x = -2;
 	transform_.position_.y = -2;
 	transform_.position_.z = 25;
 
-	transform_.rotate_.y= 90;
+	transform_.rotate_.y = 270;
 	//モデルのサイズ変更
 	transform_.scale_.x = 200;
 	transform_.scale_.z = 0.5;
@@ -22,17 +22,16 @@ void glound::Initialize()
 	hModel_ = Model::Load("tile016.fbx");
 	assert(hModel_ >= 0);
 }
-
-void glound::Update()
+void gloundL::Update()
 {
 }
 
-void glound::Draw()
+void gloundL::Draw()
 {
 	Model::SetTransform(hModel_, transform_);
 	Model::Draw(hModel_);
 }
 
-void glound::Release()
+void gloundL::Release()
 {
 }

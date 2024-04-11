@@ -99,9 +99,9 @@
     <ClCompile Include="glound.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Enmey2.cpp" />
-    <ClCompile Include="Enemy3.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
+    <ClCompile Include="gloundL.cpp" />
+    <ClCompile Include="object1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\BoxCollider.h">
@@ -177,9 +177,9 @@
     <ClInclude Include="glound.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Enmey2.h" />
-    <ClInclude Include="Enemy3.h" />
     <ClInclude Include="GameOverScene.h" />
+    <ClInclude Include="gloundL.h" />
+    <ClInclude Include="object1.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Assets\Shader\Simple2D.hlsl">

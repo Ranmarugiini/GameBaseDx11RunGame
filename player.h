@@ -1,8 +1,11 @@
 #pragma once
 #include"Engine/GameObject.h"
+#include"Engine/Text.h"
 class player :public GameObject
 {
     int hModel_;
+private:
+    Text*pText;
 public:
     //コンストラクタ
     player(GameObject* parent);
